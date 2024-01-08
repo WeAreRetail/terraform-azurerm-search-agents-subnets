@@ -9,8 +9,22 @@
 <!-- BEGIN_TF_DOCS -->
 #### Requirements
 
+| Name | Version |
+|------|---------|
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.0.0 |
+| <a name="requirement_azurerm"></a> [azurerm](#requirement\_azurerm) | >=3.11.0 |
+
 #### Inputs
+
+| Name | Description | Type | Default | Required |
+|------|-------------|------|---------|:--------:|
+| <a name="input_disaster_recovery"></a> [disaster\_recovery](#input\_disaster\_recovery) | To return the resource in the correct region | `bool` | n/a | yes |
 
 #### Outputs
 
+| Name | Description |
+|------|-------------|
+| <a name="output_ids"></a> [ids](#output\_ids) | The IDs of the subnets in the current region. |
+| <a name="output_ids_sql"></a> [ids\_sql](#output\_ids\_sql) | The IDs of the subnets for SQL. |
+| <a name="output_ids_storage"></a> [ids\_storage](#output\_ids\_storage) | The IDs of the subnets for Storage. |
 <!-- END_TF_DOCS -->
